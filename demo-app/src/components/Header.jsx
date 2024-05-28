@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header className="container-fluid p-0 text-light" style={{ backgroundColor: '#0C173E' }}>
-      <div className="row pt-2 pb-2">
+      <div className="row pt-2 pb-2 p-3">
         <div className="col-md-12 d-flex justify-content-end align-items-center">
           <a href="/" className="text-light text-decoration-none me-3">
             <i className="fas fa-home me-2"></i> Butwal Sub Metropolitan City

@@ -4,16 +4,17 @@ const AboutUs = () => {
   return (
     <div className="container mt-5">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-5">
           <img
             src="/images/aboutus.jpeg"
             alt="Indreni Rural Development Centre Nepal"
             className="img-fluid rounded"
           />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-7">
+          <h6 className='mb-3' style={{ color: 'Red' }}>About Us</h6>
           <h2 className="mb-4">Indreni Rural Development Centre Nepal (IRDC)</h2>
-          <p>
+          <p className='text-justify'>
             Indreni Rural Development Centre (IRDC) Nepal is a non-governmental
             organization (NGO) established in 1994, with the ultimate aim of
             sustainable development of rural communities of Nepal by mobilizing
@@ -23,7 +24,7 @@ const AboutUs = () => {
             Association Registration Act 2034 and is affiliated with the Social
             Welfare Council under the Social Welfare Act.
           </p>
-          <p>
+          <p className='text-justify'>
             This organization is working in various parts of Nepal in the fields
             of Education, Livelihoods, Environment, Disaster Risk Reduction
             Resource Management, Water Supply, Sanitation, Human Rights

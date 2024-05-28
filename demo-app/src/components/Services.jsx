@@ -3,7 +3,7 @@ import React from 'react';
 const Services = () => {
   return (
     <div className="container-fluid mt-5 pb-5" style={{ backgroundImage: `url(images/back1.jpeg)`, backgroundSize: 'contain', backgroundPosition: 'center' }}>
-      <h6 className="text-center pt-3">Our Services</h6>
+      <h6 className="text-center pt-3" style={{ color: 'red' }}>Our Services</h6>
       <h2 className="text-center">What We Do</h2>
       <div className="row mt-4">
         <div className="col-md-4">

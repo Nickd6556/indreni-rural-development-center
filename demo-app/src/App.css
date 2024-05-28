@@ -1,24 +1,138 @@
-.carousel-item img{
+.carousel-item img {
   height: 800px;
   width: 10%;
-  
 }
-.card img{
- 
-  aspect-ratio: 1/1;
+
+.card img {
+  aspect-ratio: 1 / 1;
   object-fit: contain;
-  
 }
 
 .image-container {
   overflow: hidden;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .image-container:hover {
   transform: scale(1.1);
 }
 
+/* Custom list items styling */
+.custom-list li {
+  position: relative;
+  padding-left: 20px; /* Adjust padding for bullet spacing */
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 10px; /* Size of the square bullet */
+  height: 10px; /* Size of the square bullet */
+  background-color: #081fcb; /* Bullet color */
+  transition: all 0.3s ease;
+}
+
+.custom-list li:hover::before {
+  border-radius: 50%; /* Turn the square into a circle on hover */
+  background-color: #06086c; /* Change bullet color on hover */
+}
+
+.custom-list a {
+  color: #100a77; /* Make text black */
+  text-decoration: none; /* Remove underline */
+}
+
+.custom-list a:hover {
+  color: #0315b6; /* Optional: Change text color on hover */
+}
+
+/* Social icons styling */
+.social-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Makes the box a square with slightly rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #007bff; /* Blue color on hover */
+  color: #fff; /* White icon color on hover */
+}
+
+/* Underline styling for headings */
+.underline {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.blue-icon {
+  color: #081fcb;
+}
+
+.blue-bullet a {
+  color: inherit;
+  text-decoration: none;
+}
 
 
+.icon-spacing {
+  margin-right: 15px; /* Adjust the space as needed */
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: -50px; /* Start position (hidden) */
+  transition: right 0.3s ease-in-out; /* Animation for sliding in */
+  width: 40px;
+  height: 40px;
+  background-color: #0C173E;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.scroll-to-top.visible {
+  right: 20px; /* End position (visible) */
+  opacity: 1;
+  margin-bottom: 45px;
+}
+
+.scroll-to-top i {
+  margin: 0;
+}
+
+.scroll-to-top i:first-child {
+  margin-bottom: -5px; /* Adjust spacing between arrows */
+}
+
+.scroll-to-top:hover {
+  background-color: #0265b0; /* Change background color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
 
