@@ -67,8 +67,8 @@ const Footer = () => {
                 <i className="fas fa-map-marker-alt icon-spacing blue-icon"></i>
                 <div>
                   Butwal Sub Metropolitan City
-                  <p className="mb-1 ml-4">Lumbini Province, Butwal-2, Ujirsingh Path</p>
-                  <p className="mb-1 ml-4">Rupendhi, Nepal</p>
+                  <p className="mb-1 ml-4">Lumbini Province, Butwal-2, Ujirsingh </p>
+                  <p className="mb-1 ml-4">Path Rupendhi, Nepal</p>
                 </div>
               </li>
               <li className="d-flex align-items-start mb-2">

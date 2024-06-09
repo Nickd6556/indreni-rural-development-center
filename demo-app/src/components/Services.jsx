@@ -7,11 +7,13 @@ const Services = () => {
       <h2 className="text-center">What We Do</h2>
       <div className="row mt-4">
         <div className="col-md-4">
-          <div className="card h-100">
-            <div className="card-body">
-              <i className="fas fa-hand-holding-water fa-2x text-primary"></i>
-              <h5 className="card-title mt-3">Livelihoods Promotion</h5>
-              <p className="card-text">
+          <div className="services-card">
+            <div className="card-body d-flex flex-column justify-content-center align-items-center">
+              <div className="circle-icon">
+                <i className="fas fa-hand-holding-water fa-2x text-white"></i>
+              </div>
+              <h5 className="card-title mt-3 text-center">Livelihoods Promotion</h5>
+              <p className="card-text text-center text-justify">
                 Livelihood strategies are the combination of
                 activities that people choose to undertake in order
                 to achieve their livelihood goals. They include
@@ -22,11 +24,13 @@ const Services = () => {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card h-100">
-            <div className="card-body">
-              <i className="fas fa-recycle fa-2x text-primary"></i>
-              <h5 className="card-title mt-3">WASH</h5>
-              <p className="card-text">
+          <div className="services-card">
+            <div className="card-body d-flex flex-column justify-content-center align-items-center">
+              <div className="circle-icon">
+                <i className="fas fa-recycle fa-2x text-white"></i>
+              </div>
+              <h5 className="card-title mt-3 text-center">WASH</h5>
+              <p className="card-text text-center text-justify">
                 WASH program works on long-term prevention
                 and control measures for improving health,
                 reducing poverty, and improving socio-economic
@@ -38,13 +42,15 @@ const Services = () => {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card h-100">
-            <div className="card-body">
-              <i className="fas fa-leaf fa-2x text-primary"></i>
-              <h5 className="card-title mt-3">
+          <div className="services-card">
+            <div className="card-body d-flex flex-column justify-content-center align-items-center">
+              <div className="circle-icon">
+                <i className="fab fa-pagelines fa-2x text-white"></i>
+              </div>
+              <h5 className="card-title mt-3 text-center">
                 Disaster Risk Management & Environment
               </h5>
-              <p className="card-text">
+              <p className="card-text text-center text-justify">
                 The impacts of disasters, whether natural or man-
                 made, not only have human dimensions, but
                 environmental ones as well. Environmental

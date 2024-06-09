@@ -5,7 +5,7 @@
 
 .card img {
   aspect-ratio: 1 / 1;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .image-container {
@@ -135,4 +135,377 @@
   background-color: #0265b0; /* Change background color on hover */
   transform: scale(1.1); /* Slightly increase size on hover */
 }
+.circle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: blue;
+  border-radius: 50%;
+  margin: auto; /* Center the circle icon horizontally */
+  transition: transform 0.3s; /* Add transition for smooth flipping */
+}
+
+.circle-icon i {
+  color: white;
+  display: flex; /* Ensure icon is a flex item */
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  width: 100%; /* Ensure icon takes full width of circle */
+  height: 100%; /* Ensure icon takes full height of circle */
+}
+
+.card-body:hover .circle-icon {
+  transform: rotateX(180deg); /* Flip the circle icon on hover */
+}
+
+.programs-container {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+  color: rgb(0, 0, 0); /* Default text color */
+}
+
+.programs-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/Images/network.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* Reduces opacity of the background image */
+  z-index: -1; /* Places the pseudo-element behind the text */
+}
+
+.content {
+  padding: 20px;
+  border-radius: 5px;
+  position: relative; /* Ensure content is above the background image */
+  z-index: 1; /* Places the content above the pseudo-element */
+}
+
+.programs-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #000; /* Ensures h1 is black */
+}
+
+nav a {
+  color: #000; /* Ensures links are black */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(18, 18, 151); /* Blue color on hover */
+}
+
+nav span {
+  color: rgb(13, 93, 212); /* Blue color for Program text */
+}
+
+.publication-container {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+  color: rgb(0, 0, 0); /* Default text color */
+}
+
+.publication-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/Images/network.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* Reduces opacity of the background image */
+  z-index: -1; /* Places the pseudo-element behind the text */
+}
+.publication-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #000; /* Ensures h1 is black */
+}
+.card {
+  margin: 3rem;
+  width: 23rem;
+  height: 30rem;
+  overflow: hidden;
+  
+}
+.gallery-card {
+  margin: 2rem;
+  width: 25rem;
+  height: 18rem;
+  overflow: hidden;
+  
+}
+.services-card {
+  margin: 2rem;
+}
+.services-card .card-body{
+  width: 25rem;
+  height: 25rem;
+}
+.services-card h5{
+  font-size: 24px;
+  padding: 2rem;
+
+}
+.btn-read-more {
+  align-self: flex-start; /* Align the button to the start */
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.5);
+}
+.card-date {
+  font-size: 0.9em;
+  color: #083fb4;
+  margin-bottom:1rem;
+
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text a {
+  color: black;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  color: rgb(46, 46, 229); /* Blue color on hover */
+
+}
+.aboutus-container {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+  color: rgb(0, 0, 0); /* Default text color */
+}
+
+.aboutus-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/Images/network.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* Reduces opacity of the background image */
+  z-index: -1; /* Places the pseudo-element behind the text */
+}
+
+.content {
+  padding: 20px;
+  border-radius: 5px;
+  position: relative; /* Ensure content is above the background image */
+  z-index: 1; /* Places the content above the pseudo-element */
+}
+
+.About-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #000; /* Ensures h1 is black */
+}
+
+nav a {
+  color: #000; /* Ensures links are black */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(18, 18, 151); /* Blue color on hover */
+}
+
+nav span {
+  color: rgb(13, 93, 212); /* Blue color for Program text */
+}
+
+
+.Careers-container {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+  color: rgb(0, 0, 0); /* Default text color */
+}
+
+.Careers-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/Images/network.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* Reduces opacity of the background image */
+  z-index: -1; /* Places the pseudo-element behind the text */
+}
+
+.content {
+  padding: 20px;
+  border-radius: 5px;
+  position: relative; /* Ensure content is above the background image */
+  z-index: 1; /* Places the content above the pseudo-element */
+}
+
+.Careers-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #000; /* Ensures h1 is black */
+}
+
+nav a {
+  color: #000; /* Ensures links are black */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(18, 18, 151); /* Blue color on hover */
+}
+
+nav span {
+  color: rgb(13, 93, 212); /* Blue color for Program text */
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.all {
+  background-color: #007bff;
+}
+
+.rehabilitation-of-ponds {
+  background-color: #ff9800;
+}
+
+.covid-awareness-program {
+  background-color: #ff69b4;
+}
+
+.indreni-rural-development-center-nepal-irdc {
+  background-color: #009688;
+}
+
+.women-empowerment-programs {
+  background-color: #8bc34a;
+}
+
+.Gallery-container {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+  color: rgb(0, 0, 0); /* Default text color */
+}
+
+.Gallery-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/Images/network.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* Reduces opacity of the background image */
+  z-index: -1; /* Places the pseudo-element behind the text */
+}
+
+.content {
+  padding: 20px;
+  border-radius: 5px;
+  position: relative; /* Ensure content is above the background image */
+  z-index: 1; /* Places the content above the pseudo-element */
+}
+
+.Gallery-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #000; /* Ensures h1 is black */
+}
+
+nav a {
+  color: #000; /* Ensures links are black */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(18, 18, 151); /* Blue color on hover */
+}
+
+nav span {
+  color: rgb(13, 93, 212); /* Blue color for Program text */
+}
+.btn-custom {
+  border-radius: 18px; /* Adjust the radius as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
 
